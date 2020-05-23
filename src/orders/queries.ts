@@ -54,6 +54,7 @@ export const fragmentOrderLine = gql`
     id
     isShippingRequired
     productName
+    variantName
     productSku
     quantity
     quantityFulfilled

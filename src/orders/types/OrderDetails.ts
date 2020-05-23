@@ -128,6 +128,7 @@ export interface OrderDetails_order_lines {
   id: string;
   isShippingRequired: boolean;
   productName: string;
+  variantName: string;
   productSku: string;
   quantity: number;
   quantityFulfilled: number;

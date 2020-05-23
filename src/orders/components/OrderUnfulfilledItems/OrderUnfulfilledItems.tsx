@@ -43,6 +43,10 @@ const styles = createStyles({
     textAlign: "right",
     width: 120
   },
+  colVariant: {
+    textAlign: "center",
+    width: 120
+  },
   statusBar: {
     paddingTop: 0
   },
@@ -95,6 +99,12 @@ const OrderUnfulfilledItems = withStyles(styles, {
             </TableCell>
             <TableCell className={classes.colQuantity}>
               <FormattedMessage
+                defaultMessage="Variant"
+                description="variant name"
+              />
+            </TableCell>
+            <TableCell className={classes.colVariant}>
+              <FormattedMessage
                 defaultMessage="Quantity"
                 description="ordered products"
               />
@@ -127,6 +137,11 @@ const OrderUnfulfilledItems = withStyles(styles, {
                 {maybe(() => line.productName) || <Skeleton />}
               </TableCellAvatar>
               <TableCell className={classes.colQuantity}>
+                {maybe(() => line.variantName) || (
+                  <Skeleton />
+                )}
+              </TableCell>
+              <TableCell className={classes.colVariant}>
                 {maybe(() => line.quantity - line.quantityFulfilled) || (
                   <Skeleton />
                 )}
