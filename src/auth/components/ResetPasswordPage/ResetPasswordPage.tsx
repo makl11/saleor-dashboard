@@ -65,6 +65,7 @@ const ResetPasswordPage: React.FC<ResetPasswordPageProps> = props => {
             autoComplete="username"
             label={intl.formatMessage(commonMessages.email)}
             name="email"
+            type="email"
             onChange={handleChange}
             value={data.email}
             inputProps={{

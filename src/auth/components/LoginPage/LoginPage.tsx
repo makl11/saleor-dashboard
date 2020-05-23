@@ -78,6 +78,7 @@ const LoginCard = withStyles(styles, { name: "LoginCard" })(
               autoComplete="username"
               label={intl.formatMessage(commonMessages.email)}
               name="email"
+              type="email"
               onChange={handleChange}
               value={data.email}
               inputProps={{
