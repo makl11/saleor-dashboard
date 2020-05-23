@@ -925,7 +925,8 @@ export const order = (placeholder: string): OrderDetails_order => ({
           amount: 18.51,
           currency: "USD"
         }
-      }
+      },
+      variantName: "X"
     },
     {
       __typename: "OrderLine",
@@ -951,7 +952,8 @@ export const order = (placeholder: string): OrderDetails_order => ({
           amount: 79.71,
           currency: "USD"
         }
-      }
+      },
+      variantName: "X"
     }
   ],
   number: "9",
@@ -1056,7 +1058,8 @@ export const draftOrder = (placeholder: string): OrderDetails_order => ({
           amount: 65.95,
           currency: "USD"
         }
-      }
+      },
+      variantName: "X"
     },
     {
       __typename: "OrderLine" as "OrderLine",
@@ -1082,7 +1085,8 @@ export const draftOrder = (placeholder: string): OrderDetails_order => ({
           amount: 68.2,
           currency: "USD"
         }
-      }
+      },
+      variantName: "X"
     }
   ],
   number: "24",
